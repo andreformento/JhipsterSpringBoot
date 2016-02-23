@@ -1,0 +1,24 @@
+{
+  "generator-jhipster": {
+    "baseName": "JhipsterSpringBoot",
+    "packageName": "com.formento.jhipsterspringboot",
+    "packageFolder": "com/formento/jhipsterspringboot",
+    "authenticationType": "oauth2",
+    "hibernateCache": "hazelcast",
+    "clusteredHttpSession": "hazelcast",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": "no",
+    "useSass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "94616cb079e52b5c0fcd390a4484bd88c9b25ceb",
+    "testFrameworks": [
+      "protractor"
+    ]
+  }
+}
