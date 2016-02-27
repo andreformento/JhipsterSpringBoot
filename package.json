@@ -1,7 +1,7 @@
 {
   "name": "jhipsterspringboot",
   "version": "0.0.0",
-  "description": "Description for JhipsterSpringBoot",
+  "description": "Description for jhipsterspringboot",
   "private": true,
   "cacheDirectories": [
     "node_modules",

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jhipsterspringbootApp')
-    .factory('Auth', function Auth($rootScope, $state, $q, $translate, Principal, AuthServerProvider, Account, Register, Activate, Password, PasswordResetInit, PasswordResetFinish, Tracker) {
+    .factory('Auth', function Auth($rootScope, $state, $q, $translate, Principal, AuthServerProvider, Account, Register, Activate, Password, PasswordResetInit, PasswordResetFinish) {
         return {
             login: function (credentials, callback) {
                 var cb = callback || angular.noop;
@@ -15,7 +15,6 @@ angular.module('jhipsterspringbootApp')
                         $translate.use(account.langKey).then(function(){
                             $translate.refresh();
                         });
-                        Tracker.sendActivity();
                         deferred.resolve(data);
                     });
                     return cb();

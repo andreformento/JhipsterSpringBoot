@@ -203,7 +203,7 @@ public class JHipsterProperties {
 
     public static class Mail {
 
-        private String from = "JhipsterSpringBoot@localhost";
+        private String from = "jhipsterspringboot@localhost";
 
         public String getFrom() {
             return from;
@@ -286,9 +286,9 @@ public class JHipsterProperties {
 
     public static class Swagger {
 
-        private String title = "JhipsterSpringBoot API";
+        private String title = "jhipsterspringboot API";
 
-        private String description = "JhipsterSpringBoot API documentation";
+        private String description = "jhipsterspringboot API documentation";
 
         private String version = "0.0.1";
 
@@ -431,7 +431,7 @@ public class JHipsterProperties {
 
             private int port = 2003;
 
-            private String prefix = "JhipsterSpringBoot";
+            private String prefix = "jhipsterspringboot";
 
             public boolean isEnabled() {
                 return enabled;

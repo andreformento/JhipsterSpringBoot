@@ -1,12 +1,18 @@
-jhipsterspringboot-mysql:
-  container_name: jhipsterspringboot-mysql
-  image: mysql:5.7.9
+jhipsterspringboot-elasticsearch:
+  container_name: jhipsterspringboot-elasticsearch
+  image: elasticsearch:1.7.3
   # volumes:
-  #   - ~/volumes/jhipster/JhipsterSpringBoot/mysql/:/var/lib/mysql/
-  environment:
-    - MYSQL_USER=root
-    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-    - MYSQL_DATABASE=jhipsterspringboot
+  #   - ~/volumes/jhipster/jhipsterspringboot/elasticsearch/:/usr/share/elasticsearch/data/
   ports:
-    - "3306:3306"
-  command: mysqld --lower_case_table_names=1
+    - "9200:9200"
+    - "9300:9300"
+jhipsterspringboot-postgresql:
+  container_name: jhipsterspringboot-postgresql
+  image: postgres:9.4.5
+  # volumes:
+  #   - ~/volumes/jhipster/jhipsterspringboot/postgresql/:/var/lib/postgresql/
+  environment:
+    - POSTGRES_USER=jhipsterspringboot
+    - POSTGRES_PASSWORD=
+  ports:
+    - "5432:5432"

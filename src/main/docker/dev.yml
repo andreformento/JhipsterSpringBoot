@@ -1,12 +1,10 @@
-jhipsterspringboot-dev-mysql:
-  container_name: jhipsterspringboot-dev-mysql
-  image: mysql:5.7.9
+jhipsterspringboot-dev-postgresql:
+  container_name: jhipsterspringboot-dev-postgresql
+  image: postgres:9.4.5
   # volumes:
-  #   - ~/volumes/jhipster/JhipsterSpringBoot/dev-mysql/:/var/lib/mysql/
+  #   - ~/volumes/jhipster/jhipsterspringboot/dev-postgresql/:/var/lib/postgresql/
   environment:
-    - MYSQL_USER=root
-    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-    - MYSQL_DATABASE=jhipsterspringboot
+    - POSTGRES_USER=jhipsterspringboot
+    - POSTGRES_PASSWORD=
   ports:
-    - "3306:3306"
-  command: mysqld --lower_case_table_names=1
+    - "5432:5432"

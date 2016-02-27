@@ -6,12 +6,12 @@ angular.module('jhipsterspringbootApp')
             login: function(credentials) {
                 var data = "username=" +  encodeURIComponent(credentials.username) + "&password="
                     + encodeURIComponent(credentials.password) + "&grant_type=password&scope=read%20write&" +
-                    "client_secret=mySecretOAuthSecret&client_id=JhipsterSpringBootapp";
+                    "client_secret=mySecretOAuthSecret&client_id=jhipsterspringbootapp";
                 return $http.post('oauth/token', data, {
                     headers: {
                         "Content-Type": "application/x-www-form-urlencoded",
                         "Accept": "application/json",
-                        "Authorization": "Basic " + Base64.encode("JhipsterSpringBootapp" + ':' + "mySecretOAuthSecret")
+                        "Authorization": "Basic " + Base64.encode("jhipsterspringbootapp" + ':' + "mySecretOAuthSecret")
                     }
                 }).success(function (response) {
                     var expiredAt = new Date();

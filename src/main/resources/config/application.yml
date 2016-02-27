@@ -46,20 +46,20 @@ jhipster:
         #allow-credentials: true
         #max-age: 1800
     mail:
-        from: JhipsterSpringBoot@localhost
+        from: jhipsterspringboot@localhost
     security:
         authentication:
             oauth:
-                clientid: JhipsterSpringBootapp
+                clientid: jhipsterspringbootapp
                 secret: mySecretOAuthSecret
                 # Token is valid 30 minutes
                 tokenValidityInSeconds: 1800
         rememberme:
             # security key (this key should be unique for your application, and kept secret)
-            key: 94616cb079e52b5c0fcd390a4484bd88c9b25ceb
+            key: 1cfcc0e1dc42f3ed175b5adf59f8df87d9f622d8
     swagger:
-        title: JhipsterSpringBoot API
-        description: JhipsterSpringBoot API documentation
+        title: jhipsterspringboot API
+        description: jhipsterspringboot API documentation
         version: 0.0.1
         termsOfServiceUrl:
         contact:
