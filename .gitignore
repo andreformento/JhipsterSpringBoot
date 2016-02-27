@@ -62,6 +62,7 @@ local.properties
 ######################
 /log/**
 /target/**
+.mvn/
 
 ######################
 # Gradle
@@ -137,7 +138,6 @@ Desktop.ini
 /test/reports
 /test/tmp/
 
-/bower.json
 /component.json
 /test/sample
 !/test/sample/bower.json
